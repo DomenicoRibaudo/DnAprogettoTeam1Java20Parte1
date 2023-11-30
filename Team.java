@@ -9,14 +9,7 @@ public class Team {
         System.out.println("Chiara, Carvelli, 25, Milano, Musica, Mango, Warcraft 3, Lovecraft, Nadir" +
                 "Pulp Fiction, Un sacchetto di biglie, '' ");
 
-
-
-
-
-    System.out.println("Antonino, Pagana, 20, Catania, Netflix, Sushi, FIFA, Now You See Me, ' ', ' ' ");
-
-        System.out.println("Andriy, Bardakhivskyy, 25, Montecchio Emilia, trekking, pasta, StrongHold +" +
-                "Pulp Fiction, Un sacchetto di biglie, '' ");
+        System.out.println("Antonino, Pagana, 20, Catania, Netflix, Sushi, FIFA, Now You See Me, ' ', ' ' ");
 
     }
 }
