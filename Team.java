@@ -3,5 +3,8 @@ public class Team {
 
     System.out.println("Antonino, Pagana, 20, Catania, Netflix, Sushi, FIFA, Now You See Me, ' ', ' ' ");
 
+        System.out.println("Andriy, Bardakhivskyy, 25, Montecchio Emilia, trekking, pasta, StrongHold +" +
+                "Pulp Fiction, Un sacchetto di biglie, '' ");
+
     }
 }
