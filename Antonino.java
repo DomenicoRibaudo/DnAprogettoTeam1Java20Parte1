@@ -1,2 +1,10 @@
-package PACKAGE_NAME;public class Antonino {
+public class Antonino {
+    public String nome;
+    public String cognome;
+    public int eta;
+    public String citta;
+    public String passatempo;
+    public String ciboPreferito;
+    public String libroPreferito;
+    public String nomeCucciolo;
 }
