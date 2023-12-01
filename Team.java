@@ -8,23 +8,14 @@ public class Team {
                 "Musica", "Mango", "Warcraft 3", "Interstellar",
                 "Lovecraft", "Nadir");
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         //stampa oggetto
         System.out.println(chiara);
 
-=======
-    Antonino antoninopagana = new Antonino("Antonino", "Pagana", 20, "Catania", "Netflix", "Sushi", "FIFA",
+
+        Antonino antoninopagana = new Antonino("Antonino", "Pagana", 20, "Catania", "Netflix", "Sushi", "FIFA",
             "Now You See Me", "' '", "' '");
 
-    System.out.println(antoninopagana);
->>>>>>> AntoninoBranch
+        System.out.println(antoninopagana);
 
-
-
-
-
->>>>>>> chiaraBranch
     }
 }
