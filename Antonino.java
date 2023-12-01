@@ -5,6 +5,7 @@ public class Antonino {
     public String citta;
     public String passatempo;
     public String ciboPreferito;
+    public String videoGiocoPreferito;
     public String libroPreferito;
     public String nomeCucciolo;
 }
