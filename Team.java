@@ -6,10 +6,17 @@ public class Team {
                 "Lovecraft", "Nadir");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         //stampa oggetto
         System.out.println(chiara);
 
+=======
+    Antonino antoninopagana = new Antonino("Antonino", "Pagana", 20, "Catania", "Netflix", "Sushi", "FIFA",
+            "Now You See Me", "' '", "' '");
+
+    System.out.println(antoninopagana);
+>>>>>>> AntoninoBranch
 
 
 
