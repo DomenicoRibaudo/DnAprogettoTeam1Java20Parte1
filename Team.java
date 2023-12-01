@@ -8,32 +8,30 @@ public class Team {
                 "Musica", "Mango", "Warcraft 3", "Interstellar",
                 "Lovecraft", "Nadir");
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
+
         //stampa oggetto
         System.out.println(chiara);
-=======
+
         Andriy andriy1 = new Andriy("Andriy", "Bardakhivskyy", 26, "Montecchio Emilia", "trekking", "pasta",
                 "StrongHold", "Pulp Fiction", "Un sacchetto di biglie", "");
 
 
         System.out.println(andriy1);
 
->>>>>>> Andriy_branch
 
-=======
+
+
     Antonino antoninopagana = new Antonino("Antonino", "Pagana", 20, "Catania", "Netflix", "Sushi", "FIFA",
             "Now You See Me", "' '", "' '");
 
     System.out.println(antoninopagana);
->>>>>>> AntoninoBranch
 
 
 
 
 
->>>>>>> chiaraBranch
+
+
     }
 }
