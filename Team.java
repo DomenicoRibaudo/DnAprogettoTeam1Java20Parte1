@@ -14,9 +14,11 @@ public class Team {
         System.out.println(chiara);
 
 
+
         Antonino antoninopagana = new Antonino("Antonino", "Pagana", 20, "Catania", "Netflix", "Sushi", "FIFA",
             "Now You See Me", "' '", "' '");
         System.out.println(antoninopagana);
+
 
 
         Andriy andriy1 = new Andriy("Andriy", "Bardakhivskyy", 26, "Montecchio Emilia", "trekking", "pasta",
