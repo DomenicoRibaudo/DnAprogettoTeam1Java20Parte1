@@ -1,11 +1,12 @@
 public class Team {
     public static void main(String[] args) {
+        //creo l'oggetto
+        Chiara chiara = new Chiara("Chiara", "Carvelli", 27, "Milano",
+                "Musica", "Mango", "Warcraft 3", "Interstellar",
+                "Lovecraft", "Nadir");
 
-        System.out.println("Andriy, Bardakhivskyy, 25, Montecchio Emilia, trekking, pasta, StrongHold +" +
-                "Pulp Fiction, Un sacchetto di biglie, '' ");
-
-        System.out.println("Chiara, Carvelli, 25, Milano, Musica, Mango, Warcraft 3, Lovecraft, Nadir" +
-                "Pulp Fiction, Un sacchetto di biglie, '' ");
+        //stampa oggetto
+        System.out.println(chiara);
 
 
 
