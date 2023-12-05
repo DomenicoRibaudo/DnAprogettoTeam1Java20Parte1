@@ -1,29 +1,26 @@
+package src;
+
+import src.Student;
+
+import java.util.Arrays;
+
 public class Team {
     public static void main(String[] args) {
+        Student domenico = new Student("Domenico", "Ribaudo", 23, "Palermo", "Gym", "Pizza",
+                "Marvel Spiderman", "AmericanPsycho", "Harry Potter", "Sid");
 
-        Domenico domenico1 = new Domenico("Domenico", "Ribaudo", 23, "Palermo", "Gym",
-                "Pizza", "Marvel Spiderman", "AmericanPsycho", "Harry Potter", "Sid");
-        System.out.println(domenico1);
-
-
-        //creo l'oggetto
-        Chiara chiara = new Chiara("Chiara", "Carvelli", 27, "Milano",
+        Student chiara = new Student("Chiara", "Carvelli", 27, "Milano",
                 "Musica", "Mango", "Warcraft 3", "Interstellar",
                 "Lovecraft", "Nadir");
-        //stampa oggetto
-        System.out.println(chiara);
 
+        Student antonino = new Student("Antonino", "Pagana", 20, "Catania", "Netflix", "Sushi", "FIFA",
+                "Now You See Me", "' '", "' '");
 
-
-        Antonino antoninopagana = new Antonino("Antonino", "Pagana", 20, "Catania", "Netflix", "Sushi", "FIFA",
-            "Now You See Me", "' '", "' '");
-        System.out.println(antoninopagana);
-
-
-
-        Andriy andriy1 = new Andriy("Andriy", "Bardakhivskyy", 26, "Montecchio Emilia", "trekking", "pasta",
+        Student andry = new Student("Andriy", "Bardakhivskyy", 26, "Montecchio Emilia", "trekking", "pasta",
                 "StrongHold", "Pulp Fiction", "Un sacchetto di biglie", "");
-        System.out.println(andriy1);
 
+        Student[] studentsArray = {domenico, chiara, antonino, andry};
+        System.out.println(Arrays.toString(studentsArray));
+//        Student.getStudentiConGiocoPreferito();
     }
 }
