@@ -21,7 +21,7 @@ public class Student {
 
     private String nomeCucciolo;
 
-    public static  Student[] studentsArray;
+    public Student[] studentsArray;
 
     public Student(String nome, String cognome, int eta, String citta, String passatempo,
                    String ciboPreferito, String giocoPreferito, String filmPreferito, String libroPreferito, String nomeCucciolo) {
