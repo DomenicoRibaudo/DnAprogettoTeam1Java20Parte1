@@ -143,19 +143,30 @@ public class Student {
     }
 
 
-//    public static void getStudentiConGiocoPreferito() {
-//        String result = "";
-//
-//        for (Student student : studentsArray) {
-//            if (student != null && "league of legends".equalsIgnoreCase(student.getGiocoPreferito())) {
-//                result += student + "\n";
-//            }
-//
-//            // Non è necessario aggiungere altri casi per altri giochi preferiti
-//        }
-//        System.out.println("I giocatori di LOL sono : " + result);
-//
-//    }
+    public static void getStudentiConGiocoPreferito() {
+        String result = "";
+
+        for (Student student : studentsArray) {
+            if (student != null && "league of legends".equalsIgnoreCase(student.getGiocoPreferito())) {
+                result += student + "\n";
+            }
+
+            // Non è necessario aggiungere altri casi per altri giochi preferiti
+        }
+        System.out.println("I giocatori di LOL sono : " + result);
+
+    }
+
+    public static void stampaStudentiConStessoNome() {
+        for (int i = 0; i < studentsArray.length - 1; i++) {
+            for (int j = i + 1; j < studentsArray.length; j++) {
+                if (studentsArray[i] != null && studentsArray[j] != null
+                        && studentsArray[i].getNome() == (studentsArray[j].getNome())) {
+                    System.out.println("Gli studenti " + studentsArray[i] + " e " + studentsArray[j] + " hanno lo stesso nome.");
+                }
+            }
+        }
+    }
 
 
 

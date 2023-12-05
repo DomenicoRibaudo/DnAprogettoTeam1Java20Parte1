@@ -4,6 +4,8 @@ import src.Student;
 
 import java.util.Arrays;
 
+import static src.Student.stampaStudentiConStessoNome;
+
 public class Team {
     public static void main(String[] args) {
         Student domenico = new Student("Domenico", "Ribaudo", 23, "Palermo", "Gym", "Pizza",
@@ -21,6 +23,7 @@ public class Team {
 
         Student[] studentsArray = {domenico, chiara, antonino, andry};
         System.out.println(Arrays.toString(studentsArray));
-//        Student.getStudentiConGiocoPreferito();
+        Student.getStudentiConGiocoPreferito();
+        stampaStudentiConStessoNome();
     }
 }
