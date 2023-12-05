@@ -21,6 +21,8 @@ public class Team {
 
         Student[] studentsArray = {domenico, chiara, antonino, andry};
         System.out.println(Arrays.toString(studentsArray));
-//        Student.getStudentiConGiocoPreferito();
+        Student.getStudentiConGiocoPreferito();
+        Student.stampaStudentiConStessoNome();
+
     }
 }

@@ -143,19 +143,21 @@ public class Student {
     }
 
 
-//    public static void getStudentiConGiocoPreferito() {
-//        String result = "";
-//
-//        for (Student student : studentsArray) {
-//            if (student != null && "league of legends".equalsIgnoreCase(student.getGiocoPreferito())) {
-//                result += student + "\n";
-//            }
-//
-//            // Non è necessario aggiungere altri casi per altri giochi preferiti
-//        }
-//        System.out.println("I giocatori di LOL sono : " + result);
-//
-//    }
+    public static void getStudentiConGiocoPreferito() {
+        String result = "";
+
+        for (Student student : studentsArray) {
+            if (student != null && "league of legends".equalsIgnoreCase(student.getGiocoPreferito())) {
+                result += student + "\n";
+            }
+
+
+        }
+        System.out.println("I giocatori di LOL sono : " + result);
+
+    }
+
+
 
 
 
