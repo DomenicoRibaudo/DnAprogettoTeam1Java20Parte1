@@ -1,36 +1,60 @@
 package src;
 
-import src.Student;
-
 import java.util.Arrays;
 
-import static src.Student.stampaStudentiConStessoNome;
-
 public class Team {
-    public static void main(String[] args) {
+    private Student[] students;
+    private int variabileAppoggio;
 
-        //TODO okey il main ma tutta la logica deve essere nella classe team
-
-
-        Student domenico = new Student("Domenico", "Ribaudo", 23, "Palermo", "Gym", "Pizza",
-                "Marvel Spiderman", "AmericanPsycho", "Harry Potter", "Sid");
-
-        Student chiara = new Student("Chiara", "Carvelli", 27, "Milano",
-                "Musica", "Mango", "Warcraft 3", "Interstellar",
-                "Lovecraft", "Nadir");
-
-        Student antonino = new Student("Antonino", "Pagana", 20, "Catania", "Netflix", "Sushi", "FIFA",
-                "Now You See Me", "' '", "' '");
-
-        Student andry = new Student("Andriy", "Bardakhivskyy", 26, "Montecchio Emilia", "trekking", "pasta",
-                "StrongHold", "Pulp Fiction", "Un sacchetto di biglie", "");
-
-        Student[] studentsArray = {domenico, chiara, antonino, andry};
-        System.out.println(Arrays.toString(studentsArray));
-
-        //TODO attenzione non si fa mai è una chiamata statica
-        domenico.getStudentiConGiocoPreferito();
-        Student.stampaStudentiConStessoNome();
-
+    public Team() {
+        this.students = new Student[10];
+        this.variabileAppoggio = 0;
     }
+
+    public void addStudent(Student student) {
+        if (variabileAppoggio < students.length) {
+            students[variabileAppoggio] = student;
+            variabileAppoggio++;
+        } else {
+            System.out.println("Impossibile aggiungere altri studenti, il team è pieno.");
+        }
+    }
+
+    public void stampaDuplicatiNome() {
+        for (int i = 0; i < students.length - 1; i++) {
+            if (students[i] == null) {
+                continue;
+            }
+
+            for (int j = i + 1; j < students.length; j++) {
+                if (students[j] == null) {
+                    continue;
+                }
+
+                if (students[i].getNome().equalsIgnoreCase(students[j].getNome())) {
+                    System.out.println("Ci sono due studenti con lo stesso nome: " + students[i].getNome());
+                    return;
+                }
+            }
+        }
+        System.out.println("Non ci sono studenti con lo stesso nome nel team.");
+    }
+
+    public void getStudentiConGiocoPreferito() {
+        String result = "";
+        for (Student student : students) {
+
+            if (student != null && "LEAGUE OF LEGENDS".equals(student.getVideogiocoPreferito())) {
+                System.out.println("I studenti che giocano a LOl sono : " + student.getNome());
+            }
+            if (student != null && !"LEAGUE OF LEGENDS".equals(student.getVideogiocoPreferito())) {
+
+                System.out.println("Non ci sono studenti che giocano a LOl");
+                break;
+            }
+
+        }
+    }
+
+
 }
