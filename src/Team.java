@@ -4,6 +4,8 @@ import src.Student;
 
 import java.util.Arrays;
 
+import static src.Student.stampaStudentiConStessoNome;
+
 public class Team {
     public static void main(String[] args) {
 

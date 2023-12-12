@@ -3,7 +3,6 @@ package src;
 import java.util.Arrays;
 
 public class Student {
-    public static final String LEAGUE_OF_LEGENDS = "league of legends";
     private String nome;
     private String cognome;
 
