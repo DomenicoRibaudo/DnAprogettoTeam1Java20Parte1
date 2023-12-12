@@ -6,6 +6,10 @@ import java.util.Arrays;
 
 public class Team {
     public static void main(String[] args) {
+
+        //TODO okey il main ma tutta la logica deve essere nella classe team
+
+
         Student domenico = new Student("Domenico", "Ribaudo", 23, "Palermo", "Gym", "Pizza",
                 "Marvel Spiderman", "AmericanPsycho", "Harry Potter", "Sid");
 
@@ -21,7 +25,9 @@ public class Team {
 
         Student[] studentsArray = {domenico, chiara, antonino, andry};
         System.out.println(Arrays.toString(studentsArray));
-        Student.getStudentiConGiocoPreferito();
+
+        //TODO attenzione non si fa mai è una chiamata statica
+        domenico.getStudentiConGiocoPreferito();
         Student.stampaStudentiConStessoNome();
 
     }

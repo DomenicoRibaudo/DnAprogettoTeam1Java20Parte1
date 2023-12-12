@@ -3,6 +3,7 @@ package src;
 import java.util.Arrays;
 
 public class Student {
+    public static final String LEAGUE_OF_LEGENDS = "league of legends";
     private String nome;
     private String cognome;
 
@@ -21,6 +22,9 @@ public class Student {
 
     private String nomeCucciolo;
 
+    private int numStudenti;
+
+    //TODO queste arry deve esistere su team
     public static  Student[] studentsArray;
 
     public Student(String nome, String cognome, int eta, String citta, String passatempo,
@@ -35,6 +39,7 @@ public class Student {
         this.filmPreferito = filmPreferito;
         this.libroPreferito = libroPreferito;
         this.nomeCucciolo = nomeCucciolo;
+        this.studentsArray = new Student[numStudenti];
     }
 
     public String getNome() {
@@ -125,6 +130,7 @@ public class Student {
         this.studentsArray = studentsArray;
     }
 
+    //TODO foese è meglio fare anche un metodo che stampa a video in modo più carino (stampaDettagli di tipo void)
     @Override
     public String toString() {
         return "Student{" +
@@ -142,24 +148,44 @@ public class Student {
                 '}';
     }
 
-
+    //TODO perchè statico? quindi è lo stesso per ogni istanza?
+    //TODO questi metodi vanno spostati nella classe team
     public static void getStudentiConGiocoPreferito() {
         String result = "";
 
         for (Student student : studentsArray) {
-            if (student != null && "league of legends".equalsIgnoreCase(student.getGiocoPreferito())) {
+            //TODO attenziona gli oggetti sempre con l'equals
+            if (student != null && LEAGUE_OF_LEGENDS == (student.getGiocoPreferito())) {
                 result += student + "\n";
             }
-
 
         }
         System.out.println("I giocatori di LOL sono : " + result);
 
     }
 
-
-
-
+    public static void stampaStudentiConStessoNome() {
+        for (int i = 0; i < studentsArray.length - 1; i++) {
+            for (int j = i + 1; j < studentsArray.length; j++) {
+                //TODO ci sono condizioni che non servono appensantiscono solo la lettura e il mantenimento
+                if (studentsArray[i] != null && studentsArray[j] != null
+                        && studentsArray[i].getNome() == (studentsArray[j].getNome())) {
+                    System.out.println("Gli studenti " + studentsArray[i] + " e " + studentsArray[j] + " hanno lo stesso nome.");
+                }
+            }
+        }
+    }
+    public static void stampaStudentiConNomiDuplicati(Studente[] elencoStudenti) {
+        // Ciclo attraverso l'array di studenti
+        for (int i = 0; i < elencoStudenti.length; i++) {
+            for (int j = i + 1; j < elencoStudenti.length; j++) {
+                // Confronta il nome dello studente corrente con gli altri studenti nell'array
+                if (elencoStudenti[i].getNome().equals(elencoStudenti[j].getNome())) {
+                    System.out.println("Studente con nome duplicato: " + elencoStudenti[i]);
+                }
+            }
+        }
+    }
 
 }
 
